@@ -55,7 +55,26 @@ picture {
     border-radius: 10px;
     text-align: center;
 }
-.seach{
+.hot{
+    background: linear-gradient(to top,rgba(0 ,0,0, 0.9),rgba(0 ,0, 0,0.1)), url(./img/warm.jpg) no-repeat center/cover;
+}
+.hot #weather{
+    background: url(./img/warm.jpg) no-repeat center/cover;
+}
+
+.cold{
+    background: linear-gradient(to top,rgba(0 ,0,0, 0.9),rgba(0 ,0, 0,0.1)), url(./img/cold.jpg) no-repeat center/cover;
+}
+.cold #weather{
+    background: url(./img/cold.jpg) no-repeat center/cover;
+}
+.cool{
+    background: linear-gradient(to top,rgba(0 ,0,0, 0.9),rgba(0 ,0, 0,0.1)), url(./img/cool.jpg) no-repeat center/cover;
+}
+.cool #weather{
+    background: url(./img/cool.jpg) no-repeat center/cover;
+}
+.search{
     width: 100%;
     border: 0;
     outline: 0;
@@ -66,19 +85,21 @@ picture {
     transition: 0.3s;
     font-size: 22px;
 }
-.seach:focus{
+.search:focus{
     border-radius: 15px 0 15px 0;
     background:rgba(255, 255, 255, 0.5);   
 }
 .content{
     align-items: center;
     color: #fff;
+    transition: 0.4s;
 }
 .capital{
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 .time{
     font-size: 15px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 .temperature{
     font-size: 65px;
@@ -103,4 +124,8 @@ picture {
 }
 .more-desc div i{
     margin: 10px 0;
+}
+.hide{
+    visibility: hidden;
+    opacity: 0;
 }
